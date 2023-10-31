@@ -1,18 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import PropTypes from 'prop-types';
-import Header from '@/components/header/header';
 import '../styles/global.css';
-import Footer from '@/components/footer/footer';
-import Reservas from './reservas';
+import Layout from '@/components/layout/layout';
 
 const CoreApp = ({ Component, pageProps, ...props }) => {
 	return (
-		<Header>
-			<Footer>
+		<>
+			<Layout>
 				<Component {...pageProps} {...props} />
-			</Footer>
-			<Reservas />
-		</Header>
+			</Layout>
+		</>
+
 	);
 };
 

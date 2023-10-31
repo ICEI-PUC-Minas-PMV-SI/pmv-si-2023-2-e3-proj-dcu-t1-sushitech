@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
+import propTypes from 'prop-types';
 import s from './style.module.scss';
 import { AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai';
 
@@ -34,6 +35,10 @@ const Footer = () => {
 			</footer>
 		</>
 	);
+};
+
+Footer.propTypes = {
+	children: propTypes.node,
 };
 
 export default Footer;

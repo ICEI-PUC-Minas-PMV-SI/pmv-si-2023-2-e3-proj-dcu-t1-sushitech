@@ -21,6 +21,7 @@ const Button = ({ type, onClick, className, children, apperance }) => {
 			type={type ? type : 'button'}
 			className={classnames(getApperance(), className)}
 			onClick={onClick}
+			disabled={apperance == 'disable' ? true : false}
 		>
 			{children}
 		</button>

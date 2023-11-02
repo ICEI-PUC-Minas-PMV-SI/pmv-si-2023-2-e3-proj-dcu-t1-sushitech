@@ -29,6 +29,10 @@
 	font-size: 32px;
 }
 
+.image {
+	object-fit: cover;
+}
+
 @media screen and (max-width: 850px) {
 	.container{
 		margin: 100px 0 0 0;

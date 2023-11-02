@@ -1,13 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Header from '@/components/header/header';
 import '../styles/global.css';
+import Layout from '@/components/layout/layout';
 
 const CoreApp = ({ Component, pageProps, ...props }) => {
 	return (
-		<Header>
-			<Component {...pageProps} {...props} />
-		</Header>
+		<>
+			<Layout>
+				<Component {...pageProps} {...props} />
+			</Layout>
+		</>
+
 	);
 };
 

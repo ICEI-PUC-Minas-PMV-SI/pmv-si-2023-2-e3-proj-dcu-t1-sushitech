@@ -15,6 +15,7 @@ const Menu = () => {
 						width={385}
 						height={308}
 						alt="Combinado standard"
+						className={s.image}
 					/>
 					<div className={s.itemInfo}>
 						<a className={s.itemTitle}>Combinado Standard</a>
@@ -22,7 +23,7 @@ const Menu = () => {
 						<span>
 							Combinado incrível com uma grande diversidade de sabores.
 						</span>
-						<Button onClick={() => router.push('/cardapio/combinado-standard')}>
+						<Button onClick={() => router.push('/cardapio/combinados/combinado-standard')}>
 							Fazer pedido
 						</Button>
 					</div>
@@ -33,6 +34,7 @@ const Menu = () => {
 						width={385}
 						height={308}
 						alt="Combinado premium"
+						className={s.image}
 					/>
 					<div className={s.itemInfo}>
 						<a className={s.itemTitle}>Combinado Premium</a>
@@ -43,7 +45,7 @@ const Menu = () => {
 							premium que<br /> garantem uma explosão de
 							sabores.
 						</span>
-						<Button onClick={() => router.push('/cardapio/combinado-premium')}>
+						<Button onClick={() => router.push('/cardapio/combinados/combinado-premium')}>
 							Fazer pedido
 						</Button>
 					</div>
@@ -55,13 +57,14 @@ const Menu = () => {
 						width={385}
 						height={308}
 						alt="Monte seu combinado"
+						className={s.image}
 					/>
 					<div className={s.itemInfo}>
 						<a className={s.itemTitle}>Monte seu combinado</a>
 						<span>
 							Monte o combinado do seu jeito.
 						</span>
-						<Button onClick={() => router.push('/cardapio/monte-seu-combinado')}>
+						<Button onClick={() => router.push('/cardapio/combinados/monte-seu-combinado')}>
 							Fazer pedido
 						</Button>
 					</div>

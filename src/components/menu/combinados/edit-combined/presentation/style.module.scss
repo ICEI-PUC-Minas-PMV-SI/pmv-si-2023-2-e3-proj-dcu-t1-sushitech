@@ -1,0 +1,145 @@
+.modalOverlay {
+	display: block;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 100;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(34, 34, 34, 0.8);
+}
+
+.modalContainer {
+	position: fixed;
+	border-radius: 12px;
+	top: 50%;
+	left: 50%;
+	z-index: 101;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: 80%;
+	background-color: black;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	padding: 25px;
+	overflow-y: auto;
+}
+
+.closeModalButton {
+	width: 5px;
+	height: 5px;
+	top: 10px;
+	right: 10px;
+	font-size: 20px;
+	cursor: pointer;
+}
+
+.titleSection {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin-bottom: 30px;
+}
+
+.mainSection {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 45px;
+	margin-bottom: 45px;
+}
+
+.line {
+	height: 1px;
+	background-color: #FFFFFF;
+	opacity: 0.6;
+}
+
+.title {
+	font-size: 36px;
+	font-weight: 500;
+}
+
+
+.itemContainer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	gap: 120px;
+}
+
+.itemName {
+	display: flex;
+	flex-direction: column;
+	margin-top: 15px;
+
+	a {
+		font-size: 14px;
+		color: #858585;
+	}
+}
+
+.quantity {
+	display: flex;
+	border: 5px solid #fff;
+	background: white;
+	border-radius: 12px;
+	color: #000;
+	min-width: 120px;
+	max-height: 35px;
+	justify-content: space-between;
+	overflow: hidden;
+	white-space: nowrap;
+	margin-top: 15px;
+	align-items: center;
+
+	button {
+		color: #C96000;
+		border: 0;
+		background-color: #fff;
+		font-size: 24px;
+		font-weight: 500;
+		cursor: pointer;
+	}
+}
+
+.image {
+	width: 35%;
+	object-fit: cover;
+}
+
+.buttonGroupper {
+	margin: 35px;
+	display: flex;
+	flex-direction: row;
+	gap: 35px;
+	justify-content: flex-end;
+}
+
+.addExtra {
+	font-size: 24px;
+	font-weight: 500;
+}
+
+@media screen and (max-width: 1400px) {
+	.image {
+		width: 30%;
+	}
+}
+
+@media screen and (max-width: 1265px) {
+	.mainSection {
+		flex-direction: column;
+	}
+
+	.image {
+		width: auto;
+		height: 200px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.buttonGroupper {
+		flex-direction: column;
+	}
+}
+

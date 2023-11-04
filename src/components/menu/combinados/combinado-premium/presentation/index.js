@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import s from './style.module.scss';
 import Image from 'next/image';
 import Button from '@/components/button/button';
+import EditModal from '@/components/menu/combinados/edit-combined/presentation';
 
 const CombinadoPremium = () => {
+	const [isModalOpen , setIsModalOpen] = useState(false);
+
 	return (
 		<>
 			<div className={s.container}>
@@ -32,6 +35,7 @@ const CombinadoPremium = () => {
 						<Button
 							className={s.button}
 							apperance='secondary'
+							onClick={() => setIsModalOpen(true)}
 						>
 							Editar Pedido
 						</Button>
@@ -42,6 +46,13 @@ const CombinadoPremium = () => {
 						</Button>
 					</div>
 				</div>
+				{isModalOpen && <EditModal
+					imagePath="/combinado-premium.png"
+					combinedName="Combinado Premium"
+					setOpenModal={setIsModalOpen}
+					initialValue={129.99}
+				/>
+				}
 			</div>
 		</>
 	);

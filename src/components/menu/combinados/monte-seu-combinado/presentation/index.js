@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import s from './style.module.scss';
 import Image from 'next/image';
 import Button from '@/components/button/button';
+import EditModal from '@/components/menu/combinados/edit-combined/presentation';
 
 const MonteSeuCombinado = () => {
+	const [isModalOpen , setIsModalOpen] = useState(false);
+
 	return (
 		<>
 			<div className={s.container}>
@@ -20,11 +23,19 @@ const MonteSeuCombinado = () => {
 					<div className={s.buttonGrouper}>
 						<Button
 							className={s.button}
+							onClick={() => setIsModalOpen(true)}
 						>
 							Montar combinado
 						</Button>
 					</div>
 				</div>
+				{isModalOpen && <EditModal
+					imagePath="/monte-seu-combinado.png"
+					combinedName="Monte seu Combinado"
+					setOpenModal={setIsModalOpen}
+					initialValue={0.00}
+				/>
+				}
 			</div>
 		</>
 	);

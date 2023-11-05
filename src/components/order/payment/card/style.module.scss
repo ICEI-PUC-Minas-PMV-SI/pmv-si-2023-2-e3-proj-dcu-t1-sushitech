@@ -1,0 +1,75 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 120px;
+	font-size: 20px;
+}
+
+.title {
+	font-size: 32px;
+	font-weight: 500;
+}
+
+.columns {
+	display: flex;
+	flex-direction: row;
+}
+
+.leftColumn {
+	display: flex;
+	flex-direction: column;
+	margin-right: 100px;
+}
+
+.rightColumn {
+	display: flex;
+	flex-direction: column;
+
+	span {
+		margin-top: 28px;
+	}
+}
+
+.inputs {
+	font-size: 16px;
+	color: #CCC;
+
+	label {
+		display: flex;
+		margin-top: 10px;
+	}
+
+	input {
+		margin-top: 1px;
+		height: 40px;
+		width: 301px;
+		border: 1px solid #ffffff;
+		font-size: 16px;
+	}
+}
+
+.buttonGroupper {
+	display: flex;
+	gap: 30px;
+	margin: 55px 0 5px 0;
+
+	button {
+		width: 150px;
+	}
+}
+
+@media screen and (max-width: 672px) {
+	.columns {
+		flex-direction: column	;
+	}
+
+	.container {
+		margin: 50px;
+		a, p {
+			text-align: center;
+		}
+
+
+	}
+}

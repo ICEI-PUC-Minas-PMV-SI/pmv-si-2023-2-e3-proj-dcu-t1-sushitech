@@ -4,8 +4,9 @@ import s from './style.module.scss';
 import Image from 'next/image';
 import Button from '@/components/button/button';
 import { formatBrazilianValue } from '@/utils/formatMoney';
+import { useRouter } from 'next/router';
 
-const EditModal = ({ imagePath, combinedName, setOpenModal, initialValue }) => {
+const EditModal = ({ imagePath, combinedName, setOpenModal, initialValue, combinedItems }) => {
 	const [items, setItems] = useState([
 		{name: 'Temaki de salmão', quantity: 0, value: 21.90},
 		{name: 'Temaki de atum', quantity: 0, value: 24.90},
@@ -21,6 +22,8 @@ const EditModal = ({ imagePath, combinedName, setOpenModal, initialValue }) => {
 		{name: 'Uramaki de salmão com cream cheesee (4x)', quantity: 0, value: 5.20},
 	]);
 	const [finalPrice, setFinalPrice] = useState(initialValue);
+
+	const router = useRouter();
 
 	const increaseTotal = (index) => {
 		const totalFinalPrice = finalPrice + items[index].value;
@@ -55,6 +58,14 @@ const EditModal = ({ imagePath, combinedName, setOpenModal, initialValue }) => {
 		return;
 	};
 
+	const saveCombinedPropsLocalStorage = (name, price) => {
+		const objectProps = {
+			combinedName: name,
+			finalPrice: price,
+		};
+		localStorage.setItem('combinedLocalStorage', JSON.stringify(objectProps));
+	};
+
 	return (
 		<>
 			<div className={s.modalOverlay}>
@@ -70,13 +81,25 @@ const EditModal = ({ imagePath, combinedName, setOpenModal, initialValue }) => {
 					</div>
 					<div className={s.line} />
 					<div className={s.mainSection}>
-						<Image
-							src={imagePath}
-							width={960}
-							height={350}
-							alt="Imagem do combinado"
-							className={s.image}
-						/>
+						<div className={s.imageSection}>
+							<Image
+								src={imagePath}
+								width={960}
+								height={350}
+								alt="Imagem do combinado"
+								className={s.image}
+							/>
+							<a className={s.combinedItems}>
+								<p>
+									{combinedName == 'Monte seu Combinado' ? '' : 'Combinado contém:'}
+								</p>
+								{combinedItems != null ? combinedItems.map((item, index) => (
+									<div key={index}>
+										<span>{item.name}</span>
+									</div>
+								)) : null}
+							</a>
+						</div>
 						<div>
 							<span className={s.addExtra}>
 								{
@@ -112,7 +135,15 @@ const EditModal = ({ imagePath, combinedName, setOpenModal, initialValue }) => {
 						>
 							Voltar
 						</Button>
-						<Button>Concluir pedido e pagar {formatBrazilianValue(finalPrice)}</Button>
+						<Button
+							apperance={finalPrice == 0 ? 'disable' : 'primary'}
+							onClick={() => {
+								saveCombinedPropsLocalStorage(combinedName, finalPrice);
+								router.push('/pedido/pagamento');
+							}}
+						>
+							Concluir pedido e pagar {formatBrazilianValue(finalPrice)}
+						</Button>
 					</div>
 				</div>
 			</div>
@@ -124,7 +155,8 @@ EditModal.propTypes = {
 	imagePath: propTypes.string,
 	combinedName: propTypes.string,
 	setOpenModal: propTypes.func,
-	initialValue: propTypes.number
+	initialValue: propTypes.number,
+	combinedItems: propTypes.node,
 };
 
 export default EditModal;

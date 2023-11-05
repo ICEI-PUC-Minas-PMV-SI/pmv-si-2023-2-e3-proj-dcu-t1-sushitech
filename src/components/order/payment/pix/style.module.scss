@@ -1,0 +1,39 @@
+.container {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 145px;
+	font-size: 20px;
+
+	span {
+		text-align: center;
+		margin-top: 15px;
+	}
+}
+
+.title {
+	font-size: 32px;
+	font-weight: 500;
+}
+
+.button {
+	margin: 25px 0 7px 0;
+}
+
+@media screen and (max-width: 863px) {
+	.container {
+		margin: 100px;
+	}
+}
+
+@media screen and (max-width: 686px) {
+	.container {
+		margin: 50px;
+	}
+}
+
+@media screen and (max-width: 586px) {
+	.container {
+		font-size: 18px;
+	}
+}

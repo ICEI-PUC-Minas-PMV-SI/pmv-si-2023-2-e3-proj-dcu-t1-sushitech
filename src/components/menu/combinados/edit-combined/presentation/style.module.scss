@@ -48,6 +48,11 @@
 	margin-bottom: 45px;
 }
 
+.imageSection {
+	display: flex;
+	flex-direction: column;
+}
+
 .line {
 	height: 1px;
 	background-color: #FFFFFF;
@@ -103,7 +108,7 @@
 }
 
 .image {
-	width: 35%;
+	width: 100%;
 	object-fit: cover;
 }
 
@@ -120,9 +125,21 @@
 	font-weight: 500;
 }
 
+.combinedItems {
+	margin: 10px;
+	font-size: 16px;
+	color: #e2e1e1;
+
+	p {
+		font-size: 18px;
+		font-weight: 500;
+		color: #fff;
+	}
+}
+
 @media screen and (max-width: 1400px) {
 	.image {
-		width: 30%;
+		width: auto;
 	}
 }
 

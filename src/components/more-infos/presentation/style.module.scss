@@ -1,0 +1,36 @@
+.container {
+	display: flex;
+	flex-direction: row;
+	margin: 100px;
+	justify-content: center;
+	gap: 30px;
+	font-size: 18px;
+}
+
+.title {
+	font-size: 32px;
+	font-weight: 500;
+}
+
+.infos {
+	margin-top: 25px;
+}
+
+.workingHours {
+	margin-top: 30px;
+	margin-bottom: 5px;
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		flex-direction: column;
+		text-align: center;
+		align-items: center;
+		margin: 35px;
+	}
+
+	.image {
+		width: 450px;
+		height: 580px;
+	}
+}

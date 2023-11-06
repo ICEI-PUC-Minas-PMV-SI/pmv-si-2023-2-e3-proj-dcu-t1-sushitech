@@ -1,10 +1,12 @@
+import Dashboard from '@/components/dashboard/presentation';
 import React from 'react';
 
-const Dashboard = () => {
+const PaginaIncial = () => {
 	return (
 		<>
+			<Dashboard />
 		</>
 	);
 };
 
-export default Dashboard;
+export default PaginaIncial;

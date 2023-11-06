@@ -22,7 +22,7 @@ const Dashboard = () => {
 					opções de combinados prontos. <br />
 					</span>
 					<p>
-					Crie seu prṕrio combinado do jeito que <br />
+					Crie seu próprio combinado, do jeito que <br />
 					você preferir
 					</p>
 				</div>

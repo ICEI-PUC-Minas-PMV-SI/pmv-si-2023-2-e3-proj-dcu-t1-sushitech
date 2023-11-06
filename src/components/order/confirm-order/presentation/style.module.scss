@@ -1,0 +1,87 @@
+.container {
+	margin: 100px;
+}
+
+.title {
+	display: flex;
+	justify-content: center;
+	font-size: 36px;
+	font-weight: 500;
+	margin-bottom: 50px;
+}
+
+.orderTable {
+	width: 100%;
+	border-collapse: collapse;
+	text-align: center;
+	margin-left: 20px;
+	font-size: 24px;
+}
+
+.buttonGroupper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 35px;
+	margin: 185px 0 200px 0;
+}
+
+.select {
+	width: 170px;
+	height: 30px;
+	border: 1px solid;
+	border-radius: 5px;
+	font-size: 16px;
+}
+
+@media screen and (max-width: 1100px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+}
+
+@media screen and (max-width: 867px) {
+	.orderTable thead {
+		position: absolute;
+		overflow: hidden;
+		clip: rect(0 0 0 0);
+		width: 1px;
+		height: 1px;
+	}
+
+	.orderTable tr {
+		display: block;
+	}
+
+	.orderTable td {
+		display: block;
+		text-align: right;
+		word-break: break-all;
+		font-size: 18px;
+	}
+
+	.orderTable td::before {
+		content: attr(aria-label);
+		float: left;
+		word-break: break-all;
+		font-size: 18px;
+		color: #b9b9b9;
+	}
+
+	.buttonGroupper {
+		flex-direction: column;
+	}
+
+	.select {
+		width: auto;
+	}
+
+	.title {
+		font-size: 28px;
+	}
+
+	.container {
+		margin: 50px;
+	}
+}

@@ -205,7 +205,7 @@ const Reservas = () => {
 		<div>
 			<h1 className={s.title} >RESERVE JÁ!</h1>
 			<div className={s.customLayout}>
-				<div className={s.rightColumn}>
+				<div className={s.leftColumn}>
 					<Image
 						src="/sushi-tech-2.jpg"
 						className={s.image}
@@ -213,11 +213,11 @@ const Reservas = () => {
 						height={860}
 						alt="Reserve já!" />
 				</div>
-				<div className={s.leftColumn}>
+				<div className={s.rightColumn}>
 					<p>
-          Bem-vindo(a) ao Sushi Tech, onde a tradição japonesa encontra a inovação culinária e tecnológica! Estamos entusiasmados por você considerar a reserva de um lugar em nosso renomado restaurante japonês.
+          Bem-vindo(a) ao SushiTech, onde a tradição japonesa encontra a inovação culinária e tecnológica! Estamos entusiasmados por você considerar a reserva de um lugar em nosso renomado restaurante japonês.
 						<br/><br/>
-          Para garantir que sua visita ao Sushi Tech seja perfeita, convidamos você à reservar sua area com antecedência. Nossa equipe dedicada está pronta para tornar sua experiência inesquecível!
+          Para garantir que sua visita ao SushiTech seja perfeita, convidamos você a reservar sua área com antecedência. Nossa equipe dedicada está pronta para tornar sua experiência inesquecível!
 						<br/><br/>
           Por favor, preencha o formulário abaixo para fazer sua reserva agora mesmo.
 						<br/><br/>

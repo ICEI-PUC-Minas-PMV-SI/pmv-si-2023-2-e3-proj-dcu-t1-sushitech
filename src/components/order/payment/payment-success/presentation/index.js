@@ -13,6 +13,7 @@ const PaymentSuccess = () => {
 				setLoading(false);
 			}, 6000);
 		}
+		window.scrollTo(0, 0);
 	}, []);
 
 	const router = useRouter();

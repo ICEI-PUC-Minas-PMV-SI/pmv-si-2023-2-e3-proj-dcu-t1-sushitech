@@ -54,9 +54,8 @@ const Header = ({ children }) => {
 						<ul>
 							<li onClick={() => router.push('/cardapio')}>Cardápio</li>
 							<li onClick={() => router.push('/reservas')}>Reservas</li>
-							<li onClick={() => router.push('/infos')}>Mais informações</li>
-							<button className={s.btn} onClick={() => router.push('/registrar')}>Registrar</button>
-							<button className={s.btn__login} onClick={() => router.push('/entrar')}>Entrar</button>
+							<li onClick={() => router.push('/mais-infos')}>Mais informações</li>
+							<li></li>
 						</ul>
 					</nav>
 					<div className={s.header__content__toggle}>

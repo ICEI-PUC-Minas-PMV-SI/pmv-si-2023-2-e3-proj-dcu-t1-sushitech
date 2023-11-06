@@ -167,6 +167,16 @@
 	.quantity {
 		min-width: 80px;
 		max-width: 80px;
+
+		button {
+			width: auto;
+			font-size: 16px;
+		}
+
+		span {
+			width: auto;
+			font-size: 14px;
+		}
 	}
 }
 

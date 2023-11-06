@@ -17,8 +17,8 @@ const MoreInfos = () => {
 					</p>
 					<h4 className={s.workingHours}>Horário de funcionamento</h4>
 					<span>
-						Seg. à Sex. - 18:30 à 23:00 <br />
-						Sab. à Dom. - 18:30 à 00:00
+						Segunda a Sexta - 18:30 às 23:00 <br />
+						Sábado a Domingo - 18:30 às 00:00
 					</span>
 					<h4 className={s.workingHours}>Localização</h4>
 					<span>

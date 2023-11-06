@@ -168,3 +168,11 @@
 		object-fit: cover;
 	}
 }
+
+@media screen and (max-width: 468px) {
+	.image {
+		width: 350px;
+		height: 320px;
+		object-fit: cover;
+	}
+}

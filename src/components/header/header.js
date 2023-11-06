@@ -52,9 +52,18 @@ const Header = ({ children }) => {
 							}`}
 					>
 						<ul>
-							<li onClick={() => router.push('/cardapio')}>Cardápio</li>
-							<li onClick={() => router.push('/reservas')}>Reservas</li>
-							<li onClick={() => router.push('/mais-infos')}>Mais informações</li>
+							<li onClick={() => {
+								setMenuOpen(false);
+								router.push('/cardapio');
+							}}>Cardápio</li>
+							<li onClick={() => {
+								setMenuOpen(false);
+								router.push('/reservas');
+							}}>Reservas</li>
+							<li onClick={() => {
+								setMenuOpen(false);
+								router.push('/mais-infos');
+							}}>Mais informações</li>
 							<li></li>
 						</ul>
 					</nav>

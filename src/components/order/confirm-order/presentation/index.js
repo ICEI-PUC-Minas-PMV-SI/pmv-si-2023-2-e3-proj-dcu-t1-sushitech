@@ -73,15 +73,15 @@ const ConfirmOrder = () => {
 							</tr>
 						</tbody>
 					</table>
-					<div className={s.buttonGroupper}>
-						<Button
-							onClick={() => router.back()}
-							apperance='secondary'
-						>
+				</div>
+				<div className={s.buttonGroupper}>
+					<Button
+						onClick={() => router.back()}
+						apperance='secondary'
+					>
 							Voltar
-						</Button>
-						<Button onClick={() => handleRenderPaymentComponent(value)}>Fazer Pagamento</Button>
-					</div>
+					</Button>
+					<Button onClick={() => handleRenderPaymentComponent(value)}>Fazer Pagamento</Button>
 				</div>
 			</div>
 		</>

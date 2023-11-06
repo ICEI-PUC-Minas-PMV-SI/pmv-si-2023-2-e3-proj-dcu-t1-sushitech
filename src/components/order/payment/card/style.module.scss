@@ -65,11 +65,15 @@
 	}
 
 	.container {
-		margin: 50px;
+		margin: 20px;
 		a, p {
 			text-align: center;
 		}
+	}
+}
 
-
+@media screen and (max-width: 428px) {
+	.columns {
+		max-width: 350px;
 	}
 }

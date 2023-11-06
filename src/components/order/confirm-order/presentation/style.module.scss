@@ -42,6 +42,9 @@
 }
 
 @media screen and (max-width: 867px) {
+	.tableContainer {
+		margin-right: 13px;
+	}
 	.orderTable thead {
 		position: absolute;
 		overflow: hidden;
@@ -58,19 +61,20 @@
 		display: block;
 		text-align: right;
 		word-break: break-all;
-		font-size: 18px;
+		font-size: 14px;
 	}
 
 	.orderTable td::before {
 		content: attr(aria-label);
 		float: left;
 		word-break: break-all;
-		font-size: 18px;
+		font-size: 13px;
 		color: #b9b9b9;
 	}
 
 	.buttonGroupper {
 		flex-direction: column;
+		margin: 60px 0 10px 0;
 	}
 
 	.select {
@@ -82,6 +86,6 @@
 	}
 
 	.container {
-		margin: 50px;
+		margin: 20px;
 	}
 }

@@ -25,15 +25,23 @@
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		margin: 50px;
+		margin: 20px;
 	}
 }
 
 @media screen and (max-width: 672px) {
 	.image {
-		width: 465px;
-		height: 400px;
+		width: 385px;
+		height: 365px;
+		object-fit: cover;
+	}
+}
 
+@media screen and (max-width: 410px) {
+	.image {
+		width: 350px;
+		height: 355px;
+		object-fit: cover;
 	}
 }
 

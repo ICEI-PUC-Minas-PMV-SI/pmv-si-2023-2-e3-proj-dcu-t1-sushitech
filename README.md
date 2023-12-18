@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+    <h1>Sushi Tech 🍣</h1>
+    <br>
+	<a href="https://pmv-si-2023-2-e3-proj-dcu-t1-sushitech.vercel.app/">Link do WebSite</a>
+    <p align="center">
+  <br>
+    <p>Pontifícia Universidade Católica de Minas Gerais</p>
+    <p>Sistemas de Informação</p>
+    <p>Projeto - Design Centrado no Usuário - 3º semestre</p>
+</div>
+</p>
 
-## Getting Started
+<p align="center">
+   Website que busca aproximar o cliente do nosso restaurante de forma simples e prática.
+    <br>
+    <br>
+</p>
 
-First, run the development server:
+<div align="justify">
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+<h3>Objetivo</h3>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<p>O objetivo geral deste trabalho é desenvolver um site inovador e integrado para o restaurante especializado em culinária japonesa, visando resolver o problema da falta de personalização e facilidade na experiência do cliente ao interagir com o restaurante, tanto em sua visita presencial quanto digitalmente.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+O software buscará estabelecer uma experiência coesa e personalizada para os clientes, melhorando a satisfação geral do cliente, a eficiência operacional e, por consequência, a receita do restaurante.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+</p>
 
-## Learn More
+<h3>Integrantes</h3>
 
-To learn more about Next.js, take a look at the following resources:
+- <a href="https://github.com/lucborges">Lucas Borges Silva</a>
+- <a href="https://github.com/GabrielVilhenaMagri">Gabriel Vilhena Magri</a>
+- <a>Ian Faria Chamone</a>
+- <a href="https://github.com/RaphaTamietto">Raphaela Tamietto Rios</a>
+- <a>Arthur Andrade de Oliveira</a>
+- <a>Iyan Lucas Duarte Marques</a>
+- <a>Guilherme Pereira Carneiro</a>
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+</div>
